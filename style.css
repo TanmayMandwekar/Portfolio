@@ -1,14 +1,14 @@
 @font-face {
     font-family: Regular;
-    src: url(/font/Inter_18pt-Regular.ttf) format("truetype");
+    src: url(font/Inter_18pt-Regular.ttf) format("truetype");
 }
 @font-face {
     font-family: Medium;
-    src: url(/font/Inter_18pt-Medium.ttf) format("truetype");
+    src: url(font/Inter_18pt-Medium.ttf) format("truetype");
 }
 @font-face {
     font-family: SemiBold;
-    src: url(/font/Inter_18pt-SemiBold.ttf) format("truetype");
+    src: url(font/Inter_18pt-SemiBold.ttf) format("truetype");
 }
 
 html {
