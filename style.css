@@ -1,0 +1,568 @@
+@font-face {
+    font-family: Regular;
+    src: url(/font/Inter_18pt-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: Medium;
+    src: url(/font/Inter_18pt-Medium.ttf) format("truetype");
+}
+@font-face {
+    font-family: SemiBold;
+    src: url(/font/Inter_18pt-SemiBold.ttf) format("truetype");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #000000;
+    color: white;
+    font-family: Regular;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.cursor {
+    position: fixed;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #ffffff50;
+    transition: 0.02s ease;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    /* mix-blend-mode: screen; */
+    z-index: 100;
+}
+
+.containerMain  {
+    background-color: #000000;
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 0px 5vw;  
+}
+/* NavBar */
+
+.nav {
+    padding: 32px 0px;
+    position: sticky;
+    top: 0px;
+    z-index: 20;
+    opacity: 0%;
+    animation: nav-load 300ms ease-in 4300ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes nav-load {
+    0% {
+        opacity: 0%;
+        /* transform: translateY(-100%); */
+    }
+    100% {
+        opacity: 100%;
+        /* transform: translateY(0%); */
+    }
+    
+}
+
+.navItems   {
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+}
+
+.navLink {
+    font-size: 20px;
+    color: #ffffff80;
+    border-bottom: 1px solid #ffffff00;
+    padding-bottom: 2px;
+    transition: all 0.2s ease-out;
+}
+
+.navLink:hover {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+/* Hero */
+
+.hero {
+    padding-top: 200px;
+    padding-left: 5vw;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+@media screen and (max-width:750px){
+    .hero {
+        padding-left: 0vw;
+        padding-top: 120px;
+    }
+}
+
+@media screen and (max-width:400px){
+    .hero {
+        padding-left: 0vw;
+        padding-top: 60px;
+    }
+}
+
+.hero h1 {
+    font-family: SemiBold;
+    font-size: 60px;
+    padding-bottom: 8px;
+    /* background-color: #000000; */
+}
+
+.block {
+    display: inline-flex;
+    /* background-color: aquamarine; */
+}
+
+@media screen and (max-width:750px){
+    .hero h1 {
+        font-size: 48px;
+    }
+    .hero p {
+        font-size: 24px;
+    }
+}
+
+
+.blinking {
+    /* background-color: blanchedalmond; */
+    max-width: 750px;
+    word-break: break-all;
+    font-family: "Medium";
+    font-size: 60px;
+    color: #ffffff;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: border 0.5s ease-in-out;
+    animation: 
+        typing 3s steps(16),
+        cursor .5s infinite  alternate;
+}
+
+@media screen and (min-width:750px) {
+    .hidden {
+        display: none !important;
+    }
+}
+
+.noBorder {
+    border-right: 0px;
+}
+
+@keyframes cursor {
+    50% {border-color: transparent}
+}
+
+@keyframes typing {
+    from {width: 0}
+}
+
+.hero p {
+    padding-left: 4px;
+    margin-top: 4px;
+    font-size: 32px;
+    color: #ffffff60;
+    opacity: 0%;
+    animation: hero-load 500ms ease-out 4000ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hero-load {
+    0% {
+        opacity: 0%;
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 100%;
+    }
+}
+
+.hero span {
+    font-family: Medium;
+    color: #ffffff;
+}
+
+/* Work */
+.work {
+    margin-top: 120px;
+    padding-top: 120px;
+    padding-bottom: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    position: relative;
+    z-index: 50;
+    background-color: #000000;
+    opacity: 0%;
+    animation: work-load 800ms ease-out 5000ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes work-load {
+    0%{
+        display: none;
+        opacity: 0%;
+        transform: translateY(10%);
+    }
+    20% {
+        display: flex;
+        opacity: 100%;
+        transform: translateY(10%);
+    }
+    100% {
+        display: flex;
+        opacity: 100%;
+        transform: translateY(0%);
+    }
+}
+.workRow {
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+}
+
+.wrk {
+    border-radius: 32px;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+}
+
+.wrk:hover {
+    border-radius: 0px;
+}
+.wrk:hover .overlay{
+    background-color: transparent;
+}
+
+
+.workBig {
+    width: 66%;
+    position: relative;
+}
+
+.workBig img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    background-color: #00000020;
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.workInfo {
+    width: 90%;
+    position: absolute;
+    bottom: 52px;
+    left: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.workInfo h2 {
+    font-family: semiBold;
+    font-size: 32px;
+}
+
+.workInfo p {
+    font-size: 20px;
+    color: #ffffff90;
+}
+
+.workSmall {
+    width: 33%;
+    position: relative;
+    /* border-radius: 24px;
+    overflow: hidden; */
+}
+
+.workSmall img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.workLogo {
+    position: absolute;
+    left:50%; top:50%; transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width:900px) {
+    .workBig , .workSmall {
+        width : 50%;
+    }
+    .workBig img {
+        height: 450px;
+        /* height: 100%; */
+        object-fit: cover;
+    }
+    .workSmall img {
+        height: 450px;
+        object-fit: cover;
+    }
+    .workLogo {
+        opacity: 0%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .workRow {
+        flex-direction: column;
+    }
+    .workSmall , .workBig {
+        width: 100%;
+    }
+}
+
+/* UTS */
+
+.w1 {
+    position: relative;
+    width: 100%;
+    height: 24px;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    /* background-color: aqua; */
+}
+
+.w1:before {
+    width: 100%;
+    content: "Unreserved ticket booking";
+    position: absolute;
+    top:0%;
+    transition: all 0.3s ease-out;
+}
+
+.w1:after {
+    content: "UX Redesign | Case Study";
+    position: absolute;
+    top:100%;
+    transition: all 0.3s ease-out;
+}
+
+.wrk:hover .w1:before {
+    top : -100% ;
+}
+
+.wrk:hover .w1:after {
+    top : 0% ;
+}
+
+/* ExploreEase */
+.w2 {
+    position: relative;
+    width: 100%;
+    height: 24px;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    /* background-color: aqua; */
+}
+
+.w2:before {
+    width: 100%;
+    content: "Your journey simplified";
+    position: absolute;
+    top:0%;
+    transition: all 0.3s ease-out;
+}
+
+.w2:after {
+    content: "App Design | Travel";
+    position: absolute;
+    top:100%;
+    transition: all 0.3s ease-out;
+}
+
+.wrk:hover .w2:before {
+    top : -100% ;
+}
+
+.wrk:hover .w2:after {
+    top : 0% ;
+}
+
+/* Applique */
+.w3 {
+    position: relative;
+    width: 100%;
+    height: 24px;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    /* background-color: aqua; */
+}
+
+.w3:before {
+    width: 100%;
+    content: "Distinctly Modern, Uniquely Elegant";
+    position: absolute;
+    top:0%;
+    transition: all 0.3s ease-out;
+}
+
+.w3:after {
+    content: "Website Design | E-commerce";
+    position: absolute;
+    top:100%;
+    transition: all 0.3s ease-out;
+}
+
+.wrk:hover .w3:before {
+    top : -100% ;
+}
+
+.wrk:hover .w3:after {
+    top : 0% ;
+}
+
+/* UniBucket */
+.w4 {
+    position: relative;
+    width: 100%;
+    height: 24px;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    /* background-color: aqua; */
+}
+
+.w4:before {
+    width: 100%;
+    content: "Capture your college years";
+    position: absolute;
+    top:0%;
+    transition: all 0.3s ease-out;
+}
+
+.w4:after {
+    content: "App Design | Case study";
+    position: absolute;
+    top:100%;
+    transition: all 0.3s ease-out;
+}
+
+.wrk:hover .w4:before {
+    top : -100% ;
+}
+
+.wrk:hover .w4:after {
+    top : 0% ;
+}
+
+/* Footer */
+
+.footer {
+    width:100%;
+    padding-bottom: 90px;
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    position: relative;
+    z-index: 50;
+    opacity: 0%;
+    animation: footer-load 500ms ease-in 5100ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes footer-load {
+    0%{
+        display: none;
+        opacity: 0%;
+    }
+    100% {
+        display: flex;
+        opacity: 100%;
+    }
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+    font-size: 24px;
+}
+
+@media screen and (max-width:450px){
+    .socials {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.social {
+    display: flex;
+    gap: 8px;
+    color: #ffffff80;
+    transition: all 0.2s ease-out;
+}
+
+.social p {
+    padding-bottom: 2px;
+    border-bottom: 1px solid #ffffff80;
+}
+
+.social:hover {
+    color: #ffffff;
+}
+
+.arrow {
+    rotate: -45deg;
+}
+
+.social:hover .arrow {
+    rotate: 0deg;
+}
+
+.social:hover .socialLink {
+    border-bottom: 1px solid #ffffff;
+}
+
+.footerContainer h5 {
+    color: #ffffff30;
+    font-size: 16px;
+}
+
+/* 
+Transition */
+
+.transition {
+    position: fixed;
+    z-index: 200;
+    width: 100%;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    background: #fff;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    transition-timing-function: ease-in;
+}
