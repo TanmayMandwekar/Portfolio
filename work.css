@@ -29,6 +29,8 @@ body {
 @media screen and (max-width:750px){
     .cursor {
         display: none;
+        height: 0px;
+        weight: 0px;
     }
 }
 
