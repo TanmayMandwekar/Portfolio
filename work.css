@@ -26,6 +26,12 @@ body {
     z-index: 100;
 }
 
+@media screen and (max-width:750px){
+    .cursor {
+        display: none;
+    }
+}
+
 /* .blankPage {
     position: relative;
     width: 100%;
