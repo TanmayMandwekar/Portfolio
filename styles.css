@@ -1,0 +1,355 @@
+.philosopher-regular {
+    font-family: "Philosopher", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.philosopher-bold {
+    font-family: "Philosopher", system-ui;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.urbanist-regular {
+    font-family: "Urbanist", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 20px;
+    color: #282828;
+    font-family: "Philosopher", system-ui;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: #282828;
+}
+
+.mainContainer {
+    position: relative;
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 0vw 5vw;
+}
+
+.navContainer {
+    width: 100%;
+    padding-top: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoContainer {
+    padding-top: 16px;
+    /* position: fixed;
+    top: 0px; 
+    left: 0px; */
+}
+
+.logo:hover {
+    scale: 0.95;
+}
+
+.menuContainer {
+    padding-top: 16px;
+    padding-right: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 20px;
+}
+
+.active {
+    color: #282828;
+    align-items: center;
+    display: flex;
+    gap: 4px;
+}
+
+.inactive {
+    display: flex;
+    gap: 4px;
+    transition: all 0.1s ease-out;
+    color: #28282850;
+    
+}
+
+.inactive img {
+    opacity: 0;
+    transition: all 0.1s ease-out;
+}
+
+.inactive:hover {
+    color: #282828;
+}
+
+.inactive:hover img {
+    opacity: 1;
+}
+
+/* Hero */
+
+.heroContainer {
+    /* margin-top: 32px; */
+    padding: 32px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+@media screen and (max-width:800px){
+    .heroContainer{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.heroContent h1 {
+    max-width: 600px;
+    width: 100%;
+}
+
+@media screen and (max-width:500px){
+    .heroContainer{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:800px){
+    .heroContent{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        justify-content: center;
+        text-align: center;
+    }
+    .heroContent a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .button {
+        width: 350px;
+    }
+}
+
+.button {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 16px 48px;
+    border: 1px solid #282828;
+    border-radius: 40px;
+    transition: all 0.1s ease-out;
+    cursor: url('./images/cursor2.png'), auto;
+}
+
+.button:hover {
+    background-color: #282828;
+    color: #fff;
+}
+
+/* WORK */
+
+.workContainer {
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8%;
+    padding-bottom: 60px;
+    margin-bottom: 400px;
+}
+
+@media screen and (max-width:800px){
+    .workContainer{
+        grid-template-columns: 1fr;
+    }
+}
+
+.workItem {
+    width: 100%;
+    cursor: url('./images/cursor1.png'), auto;
+}
+
+.workImage {
+    width: 100%;
+    position: relative;
+    transition: all 0.3s ease-out;
+}
+
+.workImage img {
+    /* position: relative; */
+    width: 100%;
+}
+
+.image {
+    position: relative;
+}
+
+.blob {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    transition: all 0.3s ease-out;
+}
+
+.workItem:hover .workImage {
+    scale: 0.95;
+}
+
+.workItem:hover .blob {
+    opacity: 1;
+}
+
+.workHeading {
+    padding: 8px 0px;
+    border-bottom: 0.8px solid #282828;
+    font-weight: 700;
+}
+
+.workBody {
+    padding: 8px 0px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.workBody h5 {
+    font-family: "Urbanist";
+    font-weight: 400;
+    color: #28282890;
+}
+
+.seprator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #28282850;
+}
+
+/* Footer */
+.footerContainer {
+    position: relative;
+    bottom: 0px;
+    margin-top: 180px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:800px){
+    .footerContainer{
+        margin-top: 1800px;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 24px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:700px){
+    .footerContainer{
+        margin-top: 1500px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .footerContainer{
+        margin-top: 1300px;
+    }
+}
+
+@media screen and (max-width:400px){
+    .footerContainer{
+        margin-top: 1000px;
+    }
+}
+
+.footerContainer h5 {
+    font-size: 16px;
+    color: #28282850;
+    font-family: "Urbanist";
+    font-weight: 400;
+}
+
+.footerContainer h4 {
+    font-size: 24px;
+    color: #28282870;
+}
+
+.footerContainer a:hover {
+    background: #b92b27;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+/* --------------------------------------------------------------- */
+/* ABOUT PAGE */
+
+.aboutContainer {
+    padding: 0px 10%;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-bottom: 90px;
+}
+
+
+
+/* TRANSITION */
+
+.transition {
+    position: fixed;
+    z-index: 200;
+    width: 100%;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    background: #fff;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    transition-timing-function: ease-in;
+}
+
+.transitionUp {
+    position: fixed;
+    z-index: 200;
+    width: 100%;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    background: #fff;
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    animation: page-load 500ms ease-out 800ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes page-load {
+    0%{
+        height: 100vh;
+    }
+    100%{
+        height: 0vh;
+    }
+}

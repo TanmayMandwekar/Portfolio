@@ -1,9 +1,3 @@
-document.addEventListener('DOMContentLoaded', (event) => {
-    const box = document.querySelector('.blinking');
-    setTimeout(() => {
-        box.classList.add('noBorder');
-    }, 3500); // 4000 milliseconds = 4 seconds
-});
 
 // Cursor
 
@@ -58,11 +52,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 }
             ]
         })
-        
-        const box = document.querySelector('.blinking');
-    setTimeout(() => {
-        box.classList.add('noBorder');
-    }, 3500); // 4000 milliseconds = 4 seconds
-    
-
 })

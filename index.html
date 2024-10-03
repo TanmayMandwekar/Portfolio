@@ -1,123 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tanmay Mandwekar - Design Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tanmay Mandwekar Design</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.png">
 
-    <!-- CSS -->
-    <link async rel="stylesheet" href="style.css"> 
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 
+    </head>
+    <body data-barba="wrapper">
+        <div class="transition"></div>
 
-</head>
-<body data-barba="wrapper">
-    <div class="transition"></div>
-    <div class="cursor"></div>
+        <main data-barba="container" data-barba-namespace="home">
+            <div class="mainContainer">
 
-    <main data-barba="container" data-barba-namespace="home" class="container">
-        <div class="containerMain">
-
-            <!-- NAV Bar -->
-            <div class="nav">
-                <div class="navItems">
-                    <a href="#work"><h5 class="navLink">Work</h5></a>
-                    <a href="https://drive.google.com/file/d/1hfb-N14j8rBwXv54cEPtRw4LX2Z6wB5W/view?usp=sharing" target="_blank"><h5 class="navLink">Resume</h5></a>
-                </div>
-            </div>
-    
-            <!-- Hero -->
-            <div class="hero">
-                <h1>
-                    <div class="block">
-                        <text class="blinking">Tanmay <br class="hidden"> Mandwekar </text>
+                <!-- NAV BAR -->
+                <div class="navContainer">
+                    <div class="logoContainer">
+                        <a href="index.html"><img src="./images/logo.svg" alt="" class="logo"></a>
                     </div>
-                </h1>
-                <p>I’m a <span>Human Interface Designer</span>.</p>
-                <p>I love creating inclusive designs that empower people.</p>
-            </div>
+                    <div class="menuContainer">
+                        <a href="index.html"><div class="active"><img src="./images/enter.svg" alt="">Work</div></a>
+                        <a href="about.html"><div class="inactive"><img src="./images/enter.svg" alt="">About</div></a>
+                        <!-- <div class="inactive"><img src="./images/enter.svg" alt="">Fun</div> -->
+                        <a target="_blank" href="https://drive.google.com/file/d/1l0_UJSx3sK8WxR60DB8Ghg4Vh5WHE4aG/view?usp=sharing"><div class="inactive"><img src="./images/enter.svg" alt="">Resume</div></a>
+                    </div>
+                </div>
     
-            <!-- Work -->
-            <div class="work" id="work">
-                <div class="workRow">
-                        <div class="wrk workBig">
-                            <a href="uts.html">
-                                <div class="overlay"></div>
-                                <img src="images/uts.png" alt="">
-                                <div class="workInfo">
-                                    <h2>UTS application</h2>
-                                    <p class="w1"></p>
-                                </div>
-                            </a>
+                <!-- HERO -->
+                <div class="heroContainer">
+                    <img src="./images/heroImage.png" alt="" class="heroImage">
+                    <div class="heroContent">
+                        <h1>Hey👋, I am Tanmay, a UX designer based in India. I love creating user-centric products.</h1>
+                        <a href="#footer"><div class="button">Say Hi!</div></a>
+                    </div>
+                </div>
+    
+                <!-- WORK -->
+                <a href="driveway.html">
+                    <div class="workContainer">
+                        <div class="workItem">
+                            <div class="workImage">
+                                <img class="blob" src="./images/1.png" alt="">
+                                <div class="image"><img src="./images/driveway.png" alt="" class=""></div>
+                            </div>
+                            <div class="workInfo"></div>
+                                <h3 class="workHeading">DriveWay app design</h3>
+                                <div class="workBody"><h5>Self drive car rental app</h5><div class="seprator"> </div><h5>UX design</h5></div>
                         </div>
+                </a>
+    
+                    <div class="workItem">
+                        <div class="workImage">
+                                <img class="blob" src="./images/2.png" alt="">
+                                <div class="image"><img src="./images/PaymentApp.png" alt="" class=""></div>
+                        </div>
+                        <div class="workInfo"></div>
+                            <h3 class="workHeading">Payment app design</h3>
+                            <div class="workBody"><h5>Payment app</h5><div class="seprator"> </div><h5>UX design</h5></div>
+                    </div>
                     
-                        <div class="wrk workSmall">
-                            <a href="exploreease.html">
-                                <div class="workLogo">
-                                    <img src="images/exploreEaselogo.svg" alt="">
-                                </div>
-                                <div class="overlay"></div>
-                                <img src="images/exploreEase.png" alt="">
-                                <div class="workInfo">
-                                    <h2>ExploreEase</h2>
-                                    <p class="w2"></p>
-                                </div>
-                            </a>
-                        </div>
-                </div>
-                <div class="workRow">
-                    <div class="wrk workSmall">
-                        <a href="applique.html">
-                            <div class="workLogo">
-                                <img src="images/appliquelogo.svg" alt="">
+                    <a href="unibucket.html">
+                        <div class="workItem">
+                            <div class="workImage">
+                                    <img class="blob" src="./images/3.png" alt="">
+                                    <div class="image"><img src="./images/unibucket.png" alt="" class=""></div>
                             </div>
-                            <div class="overlay"></div>
-                            <img src="images/applique.jpg" alt="">
-                            <div class="workInfo">
-                                <h2>Applique</h2>
-                                <p class="w3"></p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="wrk workBig">
-                        <a href="unibucket.html">
-                            <div class="overlay"></div>
-                        <img src="images/unibucket.png" alt="">
-                        <div class="workInfo">
-                            <h2>UNIBucket</h2>
-                            <p class="w4"></p>
+                            <div class="workInfo"></div>
+                                <h3 class="workHeading">UniBucket app design</h3>
+                                <div class="workBody"><h5>Bucketlist app for college students</h5><div class="seprator"> </div><h5>UX design</h5></div>
                         </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
+                    </a>
+                    
+                    <a href="applique.html">
+                        <div class="workItem">
+                            <div class="workImage">
+                                    <img class="blob" src="./images/4.png" alt="">
+                                    <div class="image"><img src="./images/applique.png" alt="" class=""></div>
+                            </div>
+                            <div class="workInfo"></div>
+                                <h3 class="workHeading">Applique Website design</h3>
+                                <div class="workBody"><h5>Ecommerce Websie</h5><div class="seprator"> </div><h5>Website design</h5></div>
+                        </div>
+                    </a>
     
-            <!-- Footer -->
-            <div class="footer">
-                <div class="footerContainer">
-                    <div class="socials">
-                        <a href="mailto:mandwekartanmay1@gmail.com"><div class="social"><p class="socialLink">Email</p><img class="arrow" src="images/arrow-right-circle.svg" alt=""></div></a>
-                        <a href="https://www.linkedin.com/in/tanmay-mandwekar" target="_blank"><div class="social"><p class="socialLink">LinkedIn</p><img class="arrow" src="images/arrow-right-circle.svg" alt=""></div></a>
-                        <a href="https://drive.google.com/file/d/1hfb-N14j8rBwXv54cEPtRw4LX2Z6wB5W/view?usp=sharing" target="_blank"><div class="social"><p class="socialLink">Resume</p><img class="arrow" src="images/arrow-right-circle.svg" alt=""></div></a>
-                    </div>
+                    <a href="exploreease.html">
+                        <div class="workItem">
+                            <div class="workImage">
+                                    <img class="blob" src="./images/6.png" alt="">
+                                    <div class="image"><img src="./images/exploreease.png" alt="" class=""></div>
+                            </div>
+                            <div class="workInfo"></div>
+                                <h3 class="workHeading">ExploreEase app design</h3>
+                                <div class="workBody"><h5>Travel app</h5><div class="seprator"> </div><h5>UX design</h5></div>
+                        </div>
+                    </a>
+    
+                    <a href="uts.html">
+                        <div class="workItem">
+                            <div class="workImage">
+                                    <img class="blob" src="./images/5.png" alt="">
+                                    <div class="image"><img src="./images/uts.png" alt="" class=""></div>
+                            </div>
+                            <div class="workInfo"></div>
+                                <h3 class="workHeading">UTS app redesign</h3>
+                                <div class="workBody"><h5>Railway ticket booking app</h5><div class="seprator"> </div><h5>UX design</h5></div>
+                        </div>
+                    </a>
+                    
+                </div>
+    
+                <!-- FOOTER -->
+                <div id="footer" class="footerContainer">
                     <h5>© Designed and Coded by Tanmay Mandwekar.</h5>
+                    <h4><span><a href="mailto:mandwekartanmay1@gmail.com">Email</a></span>/<span><a href="https://www.linkedin.com/in/tanmay-mandwekar" target="_blank">LinkedIn</a></span>/<span><a href="https://drive.google.com/file/d/1l0_UJSx3sK8WxR60DB8Ghg4Vh5WHE4aG/view?usp=sharing" target="_blank">Resume</a></span></h4>
                 </div>
+            </div>   
+                
             </div>
+        </main>
+        
+        <!-- Barba Js -->
+        <script src="https://unpkg.com/@barba/core"></script>
     
-    
-        </div>
-    </main>
-    
-
-    <!-- Barba Js -->
-    <script src="https://unpkg.com/@barba/core"></script>
-
-    <!-- GSAP cdn -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-
-    <!-- JS -->
-    <script defer src="index.js"></script>
-
-</body>
+        <!-- GSAP cdn -->
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+            
+        <!-- JS -->
+        <script defer src="index.js"></script>
+    </body>
 </html>
