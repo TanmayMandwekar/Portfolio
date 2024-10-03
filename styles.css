@@ -206,6 +206,12 @@ a {
     transition: all 0.3s ease-out;
 }
 
+@media screen and (max-width:800px){
+    .blob {
+        opacity: 1;
+    }
+}
+
 .workItem:hover .workImage {
     scale: 0.95;
 }
