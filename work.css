@@ -68,7 +68,7 @@ body {
 .workWrapper {
     position: relative;
     max-width: 1920px;
-    padding: 0px 24px 0px 24px;
+    padding: 0px;
     display: flex;
     flex-direction: column;
     gap: 4px;
