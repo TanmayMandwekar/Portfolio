@@ -71,7 +71,7 @@ body {
     padding: 0px;
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 0px;
 }
 
 @media screen and (max-width:750px){
@@ -88,12 +88,12 @@ body {
 
 .slide {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 0px;
 }
 
 @media screen and (max-width:600px){
     .slide {
-        border-radius: 12px;
+        border-radius: 0px;
     }
 }
 
