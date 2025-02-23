@@ -43,6 +43,17 @@ a {
     padding: 0vw 5vw;
 }
 
+@keyframes slideup1 {
+    from {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
 .navContainer {
     width: 100%;
     padding-top: 16px;
@@ -55,6 +66,8 @@ a {
     /* position: fixed;
     top: 0px; 
     left: 0px; */
+    opacity: 0;
+    animation: slideup1 0.5s ease-in forwards;
 }
 
 .logo:hover {
@@ -68,6 +81,8 @@ a {
     flex-direction: column;
     gap: 8px;
     font-size: 20px;
+    opacity: 0;
+    animation: slideup1 0.5s ease-in 0.5s forwards;
 }
 
 .active {
@@ -109,6 +124,11 @@ a {
     font-size: 20px;
 }
 
+.heroContainer img {
+    opacity: 0;
+    animation: slideup1 0.5s ease-in 1s forwards;
+}
+
 @media screen and (max-width:800px){
     .heroContainer{
         flex-direction: column;
@@ -119,6 +139,8 @@ a {
 .heroContent h1 {
     max-width: 600px;
     width: 100%;
+    opacity: 0;
+    animation: slideup1 0.5s ease-in 1s forwards;
 }
 
 @media screen and (max-width:500px){
@@ -154,6 +176,8 @@ a {
     border-radius: 40px;
     transition: all 0.1s ease-out;
     cursor: url('./images/cursor2.png'), auto;
+    opacity: 0;
+    animation: slideup1 0.5s ease-in 1.6s forwards;
 }
 
 .button:hover {
@@ -170,6 +194,8 @@ a {
     gap: 8%;
     padding-bottom: 60px;
     margin-bottom: 400px;
+    opacity: 0;
+    animation: slideup1 1.4s ease-in 2.2s forwards;
 }
 
 @media screen and (max-width:800px){
