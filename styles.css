@@ -78,11 +78,13 @@ a {
     padding-top: 16px;
     padding-right: 24px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 8px;
     font-size: 20px;
     opacity: 0;
     animation: slideup1 0.5s ease-in 0.5s forwards;
+    font-family: "Urbanist";
+    font-weight: 500;
 }
 
 .active {
@@ -116,7 +118,7 @@ a {
 /* Hero */
 
 .heroContainer {
-    /* margin-top: 32px; */
+    margin-top: 72px;
     padding: 32px 0px;
     display: flex;
     justify-content: center;
