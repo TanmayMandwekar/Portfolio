@@ -46,7 +46,7 @@ a {
 @keyframes slideup1 {
     from {
         opacity: 0;
-        transform: translateY(20%);
+        transform: translateY(15%);
     }
     to {
         opacity: 1;
@@ -195,7 +195,7 @@ a {
 @keyframes slideup2 {
     from {
         opacity: 0;
-        transform: translateY(10%);
+        transform: translateY(5%);
     }
     to {
         opacity: 1;
@@ -211,7 +211,7 @@ a {
     padding-bottom: 60px;
     margin-bottom: 400px;
     opacity: 0;
-    animation: slideup2 0.5s ease-in 2.2s forwards;
+    animation: slideup2 0.4s ease-in 2.2s forwards;
 }
 
 @media screen and (max-width:800px){
