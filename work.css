@@ -91,6 +91,10 @@ body {
     border-radius: 0px;
 }
 
+a .slide{
+    cursor: url('./images/cursor1.png'), auto;
+}
+
 @media screen and (max-width:600px){
     .slide {
         border-radius: 0px;
