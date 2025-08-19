@@ -18,8 +18,8 @@ body {
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background-color: #dddddd48;
-    filter: blur(4px);
+    background-color: #dddddd72;
+    filter: blur(1px);
     transition: 0.02s ease;
     transform: translate(-50%,-50%);
     pointer-events: none;
