@@ -18,13 +18,13 @@ body {
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background-color: #00000032;
+    background-color: #dddddd48;
+    filter: blur(4px);
     transition: 0.02s ease;
     transform: translate(-50%,-50%);
     pointer-events: none;
-    mix-blend-mode: difference;
+/*  mix-blend-mode: difference; */
     z-index: 100;
-/*     test */
 }
 
 @media screen and (max-width:750px){
