@@ -61,6 +61,15 @@ a {
     justify-content: space-between;
 }
 
+@media screen and (max-width:800px){
+    .navContainer {
+    width: 100%;
+    padding-top: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+}
+
 .logoContainer {
     padding-top: 16px;
     /* position: fixed;
